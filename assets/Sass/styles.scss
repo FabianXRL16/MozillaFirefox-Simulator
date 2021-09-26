@@ -1,6 +1,13 @@
 $color-primary: rgba(43, 42, 51, 1);
-$p-main: 12px;
+$p-main: 20px 32px 32px;
+:root{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+}
 body{
     background-color: $color-primary;
+    height: 100vh;
     padding: $p-main;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
 }
