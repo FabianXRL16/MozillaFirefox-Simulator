@@ -1,5 +1,16 @@
 $color-primary: rgba(43, 42, 51, 1);
+$white: rgb(255, 255, 255);
 $p-main: 20px 32px 32px;
+$h-logo: 82px;
+$fs-title-1: 45px;
+$fs-input: 15px;
+$w-input-search: 600px;
+$h-input-search: 52px;
+$c-input: #B1B1BD;
+$b-input: #38383D;
+@media (max-width: 592px){
+    $h-logo: 64px;
+}
 :root{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
 }
@@ -10,4 +21,73 @@ body{
     box-sizing: border-box;
     margin: 0;
     position: relative;
+}
+.container__settings{
+    position: absolute;
+    color: $white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    right: 28px;
+    font-size: 16px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1.1fr;
+    height: 100%;
+}
+.container__search{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+}
+.container__search-logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.container__search-logo-icon{
+    height: $h-logo;
+}
+.container__search-logo-title{
+    font-size: $fs-title-1;
+    font-weight: 600;
+    color: $white;
+}
+.container__search-content{
+    width: $w-input-search;
+    height: $h-input-search;
+    background-color: $b-input;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.container__search-content-button{
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+}
+.container__search-content-button-icon{
+    height: 18px;
+}
+.container__search-content-input{
+    color: $c-input;
+    outline: none;
+    border: none;
+    font-size: $fs-input;
+    width: 100%;
+    background-color: transparent;
+    font-weight: 100;
 }
