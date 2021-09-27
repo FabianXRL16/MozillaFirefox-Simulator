@@ -10,11 +10,20 @@
       src="https://kit.fontawesome.com/a3a61b758e.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg-high-res.fbc7ffbb50fd.png"
+    />
   </head>
   <body>
-    <button class="container__settings">
+    <button id="button_menu" class="container__settings" onclick="upMenu()">
       <i class="fas fa-cog"></i>
     </button>
+    <div id="menu_up" class="container__menu-content">
+      <button id="menu_down" onclick="downMenu()">Closed</button>
+      Hola settings
+    </div>
     <div class="container">
       <div class="container__search">
         <div class="container__search-logo">
@@ -46,55 +55,121 @@
             <button class="containet_directAccess-item-button">
               <i class="fas fa-ellipsis-h"></i>
             </button>
-            <div class="containet_directAccess-item-content">
-              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg" alt="instagram" />
-            </div>
-            <span class="containet_directAccess-item-title">instagram</span>
+            <a href="https://www.facebook.com/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/facebook.svg"
+                  alt="facebook"
+                />
+              </div>
+            </a>
+            <a href="https://www.facebook.com/" class="containet_directAccess-item-title">facebook</a>
           </div>
           <div class="containet_directAccess-item">
             <button class="containet_directAccess-item-button">
               <i class="fas fa-ellipsis-h"></i>
             </button>
-            <div class="containet_directAccess-item-content">
-              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg" alt="instagram" />
-            </div>
-            <span class="containet_directAccess-item-title">instagram</span>
+            <a href="https://www.instagram.com/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/instagram.svg"
+                  alt="instagram"
+                />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/" class="containet_directAccess-item-title">instagram</a>
           </div>
           <div class="containet_directAccess-item">
             <button class="containet_directAccess-item-button">
               <i class="fas fa-ellipsis-h"></i>
             </button>
-            <div class="containet_directAccess-item-content">
-              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg" alt="instagram" />
-            </div>
-            <span class="containet_directAccess-item-title">instagram</span>
+            <a href="https://www.netflix.com/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/netflix.svg"
+                  alt="netflix"
+                />
+              </div>
+            </a>
+            <a href="https://www.netflix.com/" class="containet_directAccess-item-title">netflix</a>
           </div>
           <div class="containet_directAccess-item">
             <button class="containet_directAccess-item-button">
               <i class="fas fa-ellipsis-h"></i>
             </button>
-            <div class="containet_directAccess-item-content">
-              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg" alt="instagram" />
-            </div>
-            <span class="containet_directAccess-item-title">instagram</span>
+            <a href="https://www.google.com/intl/es-419/gmail/about/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/gmail.svg"
+                  alt="gmail"
+                />
+              </div>
+            </a>
+            <a href="https://www.google.com/intl/es-419/gmail/about/" class="containet_directAccess-item-title">gmail</a>
           </div>
           <div class="containet_directAccess-item">
             <button class="containet_directAccess-item-button">
               <i class="fas fa-ellipsis-h"></i>
             </button>
-            <div class="containet_directAccess-item-content">
-              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg" alt="instagram" />
-            </div>
-            <span class="containet_directAccess-item-title">instagram</span>
+            <a href="https://www.google.com/intl/es/photos/about/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/photos.svg"
+                  alt="photos"
+                />
+              </div>
+            </a>
+            <a href="https://www.google.com/intl/es/photos/about/" class="containet_directAccess-item-title">photos</a>
           </div>
           <div class="containet_directAccess-item">
             <button class="containet_directAccess-item-button">
               <i class="fas fa-ellipsis-h"></i>
             </button>
-            <div class="containet_directAccess-item-content">
-              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg" alt="instagram" />
+            <a href="https://www.spotify.com/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/spotify.svg"
+                  alt="spotify"
+                />
+              </div>
+            </a>
+            <a href="https://www.spotify.com/" class="containet_directAccess-item-title">spotify</a>
+          </div>
+          <div class="containet_directAccess-item">
+            <button class="containet_directAccess-item-button">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <a href="https://www.reddit.com/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/reddit.svg"
+                  alt="reddit"
+                />
+            </a>
             </div>
-            <span class="containet_directAccess-item-title">instagram</span>
+            <a href="https://www.reddit.com/" class="containet_directAccess-item-title">reddit</a>
+          </div>
+          <div class="containet_directAccess-item">
+            <button class="containet_directAccess-item-button">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <a href="https://www.youtube.com/">
+              <div class="containet_directAccess-item-content">
+                <img
+                  class="containet_directAccess-item-content-image"
+                  src="./assets/images/icons/youtube.svg"
+                  alt="youtube"
+                />
+              </div>
+            </a>
+            <a href="https://www.youtube.com/" class="containet_directAccess-item-title">youtube</a>
           </div>
         </div>
         <div>Activity</div>
