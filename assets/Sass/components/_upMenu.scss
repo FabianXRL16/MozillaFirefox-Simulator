@@ -1,0 +1,14 @@
+.container__menu-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 432.5px;
+    background-color: $b-input;
+    box-shadow: $bs-primary;
+    z-index: 10;
+    color: $c-primary;
+    box-sizing: border-box;
+    padding: 16px;
+    display: none;
+  }
