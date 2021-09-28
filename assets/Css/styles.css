@@ -174,23 +174,14 @@
   padding-top: 10px;
 }
 
-:root {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
-}
-
-body {
-  background-color: #2b2a33;
-  height: 100vh;
-  padding: 20px 32px 32px;
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-}
-
 .container__recentActivity {
   display: flex;
+  justify-content: center;
+  align-items: start;
   flex-direction: column;
   gap: 10px;
+  border-radius: 0;
+  background-color: #2b2a33;
   padding-top: 40px;
 }
 .container__recentActivity .container__recentActivity-title {
@@ -221,31 +212,35 @@ body {
   position: absolute;
   height: 30px;
   width: 30px;
-  border-radius: 17.5px;
   top: -15px;
   right: -15px;
   border: 1px solid #cdcdd4;
-  background-color: #2b2a33;
   font-size: 12px;
   color: #cdcdd4;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 17.5px;
+  background-color: #2b2a33;
   transform: scale(0);
   transition: 0.3s;
   opacity: 0;
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-icon {
-  position: absolute;
-  background-color: #42414d;
-  top: 100px;
   height: 35px;
   width: 35px;
-  border-radius: 17.5px;
+  position: absolute;
+  top: 100px;
   right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 17.5px;
+  background-color: #42414d;
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-icon i {
   color: #cdcdd4;
@@ -259,12 +254,14 @@ body {
   border-radius: 8px 8px 0 0;
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 0 0 8px 8px;
   background-color: #42414d;
   height: 65px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0 0 8px 8px;
   padding: 0 15px;
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-text .container__recentActivity-item-text-subtitle {
@@ -285,6 +282,19 @@ body {
   margin-top: 5px;
   font-weight: 600;
   transition: 0.1s;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #2b2a33;
+  height: 100vh;
+  padding: 20px 32px 32px;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
