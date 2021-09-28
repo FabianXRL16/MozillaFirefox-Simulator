@@ -284,6 +284,12 @@
   transition: 0.1s;
 }
 
+.container__menu-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
 }

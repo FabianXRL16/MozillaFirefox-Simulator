@@ -1,0 +1,6 @@
+@import '../../mixins';
+.container__menu-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
