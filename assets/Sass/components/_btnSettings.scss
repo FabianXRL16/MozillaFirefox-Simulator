@@ -1,0 +1,8 @@
+@import '../mixins';
+
+.container__settings {
+    @include btn($c: $white);
+    position: absolute;
+    right: 28px;
+    font-size: 16px;
+  }
