@@ -1,0 +1,47 @@
+@import "../../mixins";
+.container__directAccess {
+  @include centerXYFlex($fd: column, $g: 0);
+  padding: 50px 0;
+  .container__directAccess-group {
+    display: grid;
+    grid-template-columns: repeat(8, 120px);
+    .containet_directAccess-item {
+      height: 150px;
+      border-radius: 8px;
+      position: relative;
+      display: grid;
+      place-content: center;
+      place-items: center;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        background-color: rgba(56, 56, 61, 0.6);
+        .containet_directAccess-item-button {
+          opacity: 1;
+        }
+      }
+    }
+    .containet_directAccess-item-button {
+      @include btn($c: $c-primary);
+      position: absolute;
+      right: 10px;
+      top: 4px;
+      font-size: 10px;
+      opacity: 0;
+    }
+    .containet_directAccess-item-content {
+      height: 80px;
+      width: 80px;
+      @include centerXYFlex($bc: $color-third, $b-radius: 8px);
+    }
+    .containet_directAccess-item-content-image {
+      height: 48px;
+    }
+    .containet_directAccess-item-title {
+      color: $c-primary;
+      font-size: 12px;
+      text-decoration: none;
+      padding-top: 10px;
+    }
+  }
+}
