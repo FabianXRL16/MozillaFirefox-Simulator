@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  padding-top: 30px;
+  box-sizing: border-box;
+}

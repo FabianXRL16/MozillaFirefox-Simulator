@@ -1,25 +1,12 @@
-:root {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
-}
-
-body {
-  background-color: #2b2a33;
-  height: 100vh;
-  padding: 20px 32px 32px;
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-}
-
 .container__settings {
-  position: absolute;
-  color: white;
-  background-color: transparent;
-  border: none;
   outline: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
   right: 28px;
   font-size: 16px;
-  cursor: pointer;
 }
 
 .container__menu-content {
@@ -48,16 +35,22 @@ body {
 .container__search {
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: end;
   align-items: center;
+  flex-direction: column;
   gap: 50px;
+  border-radius: 0;
+  background-color: #2b2a33;
 }
 
 .container__search-logo {
   display: flex;
+  justify-content: start;
   align-items: center;
+  flex-direction: row;
   gap: 16px;
+  border-radius: 0;
+  background-color: #2b2a33;
 }
 
 .container__search-logo-icon {
@@ -73,25 +66,34 @@ body {
 .container__search-content {
   width: 720px;
   height: 52px;
-  background-color: #38383d;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 8px;
   display: flex;
+  justify-content: start;
   align-items: center;
-  padding: 0 20px;
+  flex-direction: row;
   gap: 10px;
+  border-radius: 8px;
+  background-color: #38383d;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .container__search-content-button {
-  outline: none;
-  border: none;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 0;
+  background-color: #2b2a33;
+  outline: none;
+  background-color: white;
+  color: #fff;
+  border: none;
+  cursor: auto;
   height: 24px;
   width: 24px;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 
 .container__search-content-button-icon {
@@ -99,13 +101,27 @@ body {
 }
 
 .container__search-content-input {
-  color: #b1b1bd;
-  outline: none;
-  border: none;
   font-size: 15px;
   width: 100%;
-  background-color: transparent;
   font-weight: 100;
+  outline: none;
+  background-color: transparent;
+  color: #b1b1bd;
+  border: none;
+  cursor: auto;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #2b2a33;
+  height: 100vh;
+  padding: 20px 32px 32px;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
 }
 
 .container__directAccess {
@@ -136,16 +152,16 @@ body {
   opacity: 1;
 }
 .container__directAccess-group .containet_directAccess-item-button {
+  outline: none;
+  background-color: transparent;
+  color: #cdcdd4;
+  border: none;
+  cursor: pointer;
   position: absolute;
   right: 10px;
   top: 4px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  color: #cdcdd4;
   font-size: 10px;
   opacity: 0;
-  cursor: pointer;
 }
 .container__directAccess-group .containet_directAccess-item-content {
   height: 80px;

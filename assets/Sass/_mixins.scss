@@ -1,0 +1,17 @@
+@mixin btn($bc: transparent, $c: #fff, $b: none, $cur: pointer) {
+    outline: none;
+    background-color: $bc;
+    color: $c;
+    border: $b;
+    cursor: $cur;
+}
+
+@mixin  centerXYFlex($jc: center, $ai: center, $fd: row, $g: 0, $b-radius: 0, $bc: $color-primary) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    gap: $g;
+    border-radius: $b-radius;
+    background-color: $bc;
+}

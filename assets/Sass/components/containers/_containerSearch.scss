@@ -1,0 +1,41 @@
+@import '../../mixins';
+
+.container__search {
+    height: 100%;
+    @include centerXYFlex($jc: end, $fd: column, $g: 50px);
+  }
+  .container__search-logo {
+    @include centerXYFlex($jc: start, $fd: row, $g: 16px);
+  }
+  .container__search-logo-icon {
+    height: $h-logo;
+  }
+  .container__search-logo-title {
+    font-size: $fs-title-1;
+    font-weight: 600;
+    color: $white;
+  }
+  .container__search-content {
+    width: $w-input-search;
+    height: $h-input-search;
+    box-shadow: $bs-primary;
+    @include centerXYFlex($jc: start, $g: 10px, $b-radius: $border-radius, $bc: $b-input);
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .container__search-content-button {
+    @include centerXYFlex();
+    @include btn($bc: $white, $c: #fff, $b: none, $cur: auto);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+  .container__search-content-button-icon {
+    height: 18px;
+  }
+  .container__search-content-input {
+    font-size: $fs-input;
+    width: 100%;
+    font-weight: 100;
+    @include btn($c: $c-input, $b: none, $cur: auto);
+  }

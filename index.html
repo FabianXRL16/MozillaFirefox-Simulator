@@ -1,236 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Tab</title>
-    <link rel="stylesheet" href="./assets/Css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/a3a61b758e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      type="image/svg"
-      href="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg-high-res.fbc7ffbb50fd.png"
-    />
-  </head>
-  <body>
-    <button id="button_menu" class="container__settings" onclick="upMenu()">
-      <i class="fas fa-cog"></i>
-    </button>
-    <div id="menu_up" class="container__menu-content">
-      <button id="menu_down" onclick="downMenu()">Closed</button>
-      Hola settings
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Tab</title>
+  <link rel="stylesheet" href="./assets/Css/styles.css" />
+  <script src="https://kit.fontawesome.com/a3a61b758e.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/svg"
+    href="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg-high-res.fbc7ffbb50fd.png" />
+</head>
+
+<body>
+  <button id="button_menu" class="container__settings" onclick="upMenu()">
+    <i class="fas fa-cog"></i>
+  </button>
+  <div id="menu_up" class="container__menu-content">
+    <button id="menu_down" onclick="downMenu()">Closed</button>
+    Hola settings
+  </div>
+  <div class="container">
+    <div class="container__search">
+      <div class="container__search-logo">
+        <img class="container__search-logo-icon"
+          src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg-high-res.fbc7ffbb50fd.png"
+          alt="Mozilla Firefox" />
+        <span class="container__search-logo-title">Firefox</span>
+      </div>
+      <div class="container__search-content">
+        <button class="container__search-content-button">
+          <img class="container__search-content-button-icon" src="./assets/images/icons/google.svg" alt="google" />
+        </button>
+        <input class="container__search-content-input" type="text"
+          placeholder="Seach with Google or enter an address" />
+      </div>
     </div>
-    <div class="container">
-      <div class="container__search">
-        <div class="container__search-logo">
-          <img
-            class="container__search-logo-icon"
-            src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg-high-res.fbc7ffbb50fd.png"
-            alt="Mozilla Firefox"
-          />
-          <span class="container__search-logo-title">Firefox</span>
-        </div>
-        <div class="container__search-content">
-          <button class="container__search-content-button">
-            <img
-              class="container__search-content-button-icon"
-              src="./assets/images/icons/google.svg"
-              alt="google"
-            />
+    <div class="container__directAccess">
+      <div class="container__directAccess-group">
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
           </button>
-          <input
-            class="container__search-content-input"
-            type="text"
-            placeholder="Seach with Google or enter an address"
-          />
-        </div>
-      </div>
-      <div class="container__directAccess">
-        <div class="container__directAccess-group">
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.facebook.com/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/facebook.svg"
-                  alt="facebook"
-                />
-              </div>
-            </a>
-            <a href="https://www.facebook.com/" class="containet_directAccess-item-title">facebook</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.instagram.com/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/instagram.svg"
-                  alt="instagram"
-                />
-              </div>
-            </a>
-            <a href="https://www.instagram.com/" class="containet_directAccess-item-title">instagram</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.netflix.com/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/netflix.svg"
-                  alt="netflix"
-                />
-              </div>
-            </a>
-            <a href="https://www.netflix.com/" class="containet_directAccess-item-title">netflix</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.google.com/intl/es-419/gmail/about/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/gmail.svg"
-                  alt="gmail"
-                />
-              </div>
-            </a>
-            <a href="https://www.google.com/intl/es-419/gmail/about/" class="containet_directAccess-item-title">gmail</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.google.com/intl/es/photos/about/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/photos.svg"
-                  alt="photos"
-                />
-              </div>
-            </a>
-            <a href="https://www.google.com/intl/es/photos/about/" class="containet_directAccess-item-title">photos</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.spotify.com/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/spotify.svg"
-                  alt="spotify"
-                />
-              </div>
-            </a>
-            <a href="https://www.spotify.com/" class="containet_directAccess-item-title">spotify</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.reddit.com/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/reddit.svg"
-                  alt="reddit"
-                />
-            </a>
+          <a href="https://www.facebook.com/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/facebook.svg"
+                alt="facebook" />
             </div>
-            <a href="https://www.reddit.com/" class="containet_directAccess-item-title">reddit</a>
-          </div>
-          <div class="containet_directAccess-item">
-            <button class="containet_directAccess-item-button">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-            <a href="https://www.youtube.com/">
-              <div class="containet_directAccess-item-content">
-                <img
-                  class="containet_directAccess-item-content-image"
-                  src="./assets/images/icons/youtube.svg"
-                  alt="youtube"
-                />
-              </div>
-            </a>
-            <a href="https://www.youtube.com/" class="containet_directAccess-item-title">youtube</a>
-          </div>
+          </a>
+          <a href="https://www.facebook.com/" class="containet_directAccess-item-title">facebook</a>
         </div>
-        <div class="container__recentActivity">
-          <span class="container__recentActivity-title">Recent Activity</span>
-          <div class="container__recentActivity-content">
-            <a href="https://www.facebook.com/" class="container__recentActivity-item">
-              <div class="container__recentActivity-item-button">
-                <i class="fas fa-ellipsis-h"></i>
-              </div>
-              <div class="container__recentActivity-item-icon">
-                <i class="far fa-clock"></i>
-              </div>
-              <div class="container__recentActivity-item-image" style="background-image: url('https://webescuela.com/wp-content/uploads/2018/06/que-es-facebook.png');"></div>
-              <div class="container__recentActivity-item-text">
-                <span class="container__recentActivity-item-text-subtitle">en-la.facebook</span>
-                <span class="container__recentActivity-item-text-title">Facebook - Sign In</span>
-              </div>
-            </a>
-            <a href="https://www.instagram.com/" class="container__recentActivity-item">
-              <div class="container__recentActivity-item-button">
-                <i class="fas fa-ellipsis-h"></i>
-              </div>
-              <div class="container__recentActivity-item-icon">
-                <i class="far fa-clock"></i>
-              </div>
-              <div class="container__recentActivity-item-image" style="background-image: url('https://www.trecebits.com/wp-content/uploads/2021/02/Lite.jpg');"></div>
-              <div class="container__recentActivity-item-text">
-                <span class="container__recentActivity-item-text-subtitle">instagram</span>
-                <span class="container__recentActivity-item-text-title">Instagram</span>
-              </div>
-            </a>
-            <a href="https://www.youtube.com/" class="container__recentActivity-item">
-              <div class="container__recentActivity-item-button">
-                <i class="fas fa-ellipsis-h"></i>
-              </div>
-              <div class="container__recentActivity-item-icon">
-                <i class="far fa-clock"></i>
-              </div>
-              <div class="container__recentActivity-item-image" style="background-image: url('https://www.youtube.com/img/desktop/yt_1200.png');"></div>
-              <div class="container__recentActivity-item-text">
-                <span class="container__recentActivity-item-text-subtitle">youtube</span>
-                <span class="container__recentActivity-item-text-title">YouTube</span>
-              </div>
-            </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" class="container__recentActivity-item">
-              <div class="container__recentActivity-item-button">
-                <i class="fas fa-ellipsis-h"></i>
-              </div>
-              <div class="container__recentActivity-item-icon">
-                <i class="far fa-clock"></i>
-              </div>
-              <div class="container__recentActivity-item-image" style="background-image: url('https://www.eyerys.com/sites/default/files/mdn-web-docs-logo.png');"></div>
-              <div class="container__recentActivity-item-text">
-                <span class="container__recentActivity-item-text-subtitle">developer.mozilla</span>
-                <span class="container__recentActivity-item-text-title">History API - Web APIs</span>
-              </div>
-            </a>
-          </div>
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <a href="https://www.instagram.com/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/instagram.svg"
+                alt="instagram" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/" class="containet_directAccess-item-title">instagram</a>
         </div>
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <a href="https://www.netflix.com/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/netflix.svg"
+                alt="netflix" />
+            </div>
+          </a>
+          <a href="https://www.netflix.com/" class="containet_directAccess-item-title">netflix</a>
+        </div>
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <a href="https://www.google.com/intl/es-419/gmail/about/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/gmail.svg"
+                alt="gmail" />
+            </div>
+          </a>
+          <a href="https://www.google.com/intl/es-419/gmail/about/" class="containet_directAccess-item-title">gmail</a>
+        </div>
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <a href="https://www.google.com/intl/es/photos/about/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/photos.svg"
+                alt="photos" />
+            </div>
+          </a>
+          <a href="https://www.google.com/intl/es/photos/about/" class="containet_directAccess-item-title">photos</a>
+        </div>
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <a href="https://www.spotify.com/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/spotify.svg"
+                alt="spotify" />
+            </div>
+          </a>
+          <a href="https://www.spotify.com/" class="containet_directAccess-item-title">spotify</a>
+        </div>
+        <div class="containet_directAccess-item">
+          <button class="containet_directAccess-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <a href="https://www.reddit.com/">
+            <div class="containet_directAccess-item-content">
+              <img class="containet_directAccess-item-content-image" src="./assets/images/icons/reddit.svg"
+                alt="reddit" />
+          </a>
+        </div>
+        <a href="https://www.reddit.com/" class="containet_directAccess-item-title">reddit</a>
+      </div>
+      <div class="containet_directAccess-item">
+        <button class="containet_directAccess-item-button">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <a href="https://www.youtube.com/">
+          <div class="containet_directAccess-item-content">
+            <img class="containet_directAccess-item-content-image" src="./assets/images/icons/youtube.svg"
+              alt="youtube" />
+          </div>
+        </a>
+        <a href="https://www.youtube.com/" class="containet_directAccess-item-title">youtube</a>
       </div>
     </div>
-    <script src="./app/app.js"></script>
-  </body>
+    <div class="container__recentActivity">
+      <span class="container__recentActivity-title">Recent Activity</span>
+      <div class="container__recentActivity-content">
+        <a href="https://www.facebook.com/" class="container__recentActivity-item">
+          <div class="container__recentActivity-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="container__recentActivity-item-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="container__recentActivity-item-image"
+            style="background-image: url('https://webescuela.com/wp-content/uploads/2018/06/que-es-facebook.png');">
+          </div>
+          <div class="container__recentActivity-item-text">
+            <span class="container__recentActivity-item-text-subtitle">en-la.facebook</span>
+            <span class="container__recentActivity-item-text-title">Facebook - Sign In</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/" class="container__recentActivity-item">
+          <div class="container__recentActivity-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="container__recentActivity-item-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="container__recentActivity-item-image"
+            style="background-image: url('https://www.trecebits.com/wp-content/uploads/2021/02/Lite.jpg');"></div>
+          <div class="container__recentActivity-item-text">
+            <span class="container__recentActivity-item-text-subtitle">instagram</span>
+            <span class="container__recentActivity-item-text-title">Instagram</span>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/" class="container__recentActivity-item">
+          <div class="container__recentActivity-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="container__recentActivity-item-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="container__recentActivity-item-image"
+            style="background-image: url('https://www.youtube.com/img/desktop/yt_1200.png');"></div>
+          <div class="container__recentActivity-item-text">
+            <span class="container__recentActivity-item-text-subtitle">youtube</span>
+            <span class="container__recentActivity-item-text-title">YouTube</span>
+          </div>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" class="container__recentActivity-item">
+          <div class="container__recentActivity-item-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="container__recentActivity-item-icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="container__recentActivity-item-image"
+            style="background-image: url('https://www.eyerys.com/sites/default/files/mdn-web-docs-logo.png');"></div>
+          <div class="container__recentActivity-item-text">
+            <span class="container__recentActivity-item-text-subtitle">developer.mozilla</span>
+            <span class="container__recentActivity-item-text-title">History API - Web APIs</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./app/app.js"></script>
+</body>
+
 </html>
