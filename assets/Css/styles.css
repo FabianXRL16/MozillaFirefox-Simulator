@@ -18,7 +18,7 @@
   background-color: #38383d;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 10;
-  color: #cdcdd4;
+  color: #E0E0E6;
   box-sizing: border-box;
   padding: 16px;
   display: none;
@@ -144,7 +144,7 @@
 .container__directAccess .container__directAccess-group .containet_directAccess-item-button {
   outline: none;
   background-color: transparent;
-  color: #cdcdd4;
+  color: #E0E0E6;
   border: none;
   cursor: pointer;
   position: absolute;
@@ -162,13 +162,13 @@
   flex-direction: row;
   gap: 0;
   border-radius: 8px;
-  background-color: #4a4a4f;
+  background-color: #515156;
 }
 .container__directAccess .container__directAccess-group .containet_directAccess-item-content-image {
   height: 48px;
 }
 .container__directAccess .container__directAccess-group .containet_directAccess-item-title {
-  color: #cdcdd4;
+  color: #E0E0E6;
   font-size: 12px;
   text-decoration: none;
   padding-top: 10px;
@@ -214,9 +214,9 @@
   width: 30px;
   top: -15px;
   right: -15px;
-  border: 1px solid #cdcdd4;
+  border: 1px solid #E0E0E6;
   font-size: 12px;
-  color: #cdcdd4;
+  color: #E0E0E6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +243,7 @@
   background-color: #42414d;
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-icon i {
-  color: #cdcdd4;
+  color: #E0E0E6;
   font-size: 16px;
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-image {
@@ -266,7 +266,7 @@
 }
 .container__recentActivity .container__recentActivity-content .container__recentActivity-item .container__recentActivity-item-text .container__recentActivity-item-text-subtitle {
   font-size: 13px;
-  color: #cdcdd4;
+  color: #E0E0E6;
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -287,7 +287,184 @@
 .container__menu-content {
   height: 100%;
   display: flex;
+  justify-content: start;
+  align-items: inherit;
   flex-direction: column;
+  gap: 0;
+  border-radius: 0;
+  background-color: #38383d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container__menu-content .container__menu-content-btnDown {
+  padding: 8px 13px;
+  margin-left: auto;
+  outline: none;
+  background-color: #515156;
+  color: #b1b1bd;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-bottom: 28px;
+  transition: 0.1s;
+}
+.container__menu-content .container__menu-content-btnDown:hover {
+  background-color: #626264;
+  transition: 0.1s;
+}
+.container__menu-content .container__menu-content-btnDown h6 {
+  font-size: 13px;
+  color: #E0E0E6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+.container__menu-content .container__menu-content-directSettings-sup {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px 25px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title label {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title .switch {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 16px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #515156;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title .slider:before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #E0E0E6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title input:checked + .slider {
+  background-color: #4484E2;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title input:checked + .slider:before {
+  transform: translateX(10px);
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title .slider {
+  border-radius: 13px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-title .slider:before {
+  border-radius: 50%;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content span {
+  font-size: 14px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-select {
+  position: relative;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-select i {
+  position: absolute;
+  left: 98px;
+  top: 11.8px;
+  font-size: 10px;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-select select {
+  position: relative;
+  height: 31.6px;
+  width: 118px;
+  border: 1px solid #E0E0E6;
+  background-color: #38383d;
+  border-radius: 4px;
+  color: #E0E0E6;
+  display: block;
+  appearance: none;
+  padding-block: 7px;
+  padding-inline: 10px 13px;
+  margin-inline-start: 2px;
+  margin-bottom: 2px;
+  outline: none;
+  box-sizing: border-box;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-checkbox {
+  display: flex;
+  position: relative;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-checkbox input {
+  position: absolute;
+  z-index: 9;
+  width: 16px;
+  height: 16px;
+  border: none;
+  outline: none;
+  background-color: #42414d;
+  border-radius: 4px;
+  appearance: none;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-checkbox input:checked {
+  background-color: transparent;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-checkbox i {
+  position: absolute;
+  left: 4px;
+  border-radius: 4px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  background-color: #4484E2;
+  z-index: 1;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__menu-content .container__menu-content-directSettings-sup .container__menu-content-directSettings-content .container__menu-content-directSettings-content-checkbox span {
+  margin-left: 30px;
+}
+.container__menu-content .line {
+  width: 100%;
+}
+.container__menu-content .container__menu-content-ManageSettings {
+  padding: 25px 20px 0;
+}
+.container__menu-content .container__menu-content-ManageSettings a {
+  text-decoration: none;
+  color: #E0E0E6;
+  font-size: 14px;
+}
+.container__menu-content .container__menu-content-ManageSettings a span {
+  padding-left: 5px;
+}
+.container__menu-content .container__menu-content-ManageSettings:hover {
+  text-decoration: underline;
 }
 
 :root {

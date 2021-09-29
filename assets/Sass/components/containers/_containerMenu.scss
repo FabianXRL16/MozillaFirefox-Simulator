@@ -1,6 +1,175 @@
-@import '../../mixins';
-.container__menu-content{
-    height: 100%;
+@import "../../mixins";
+.container__menu-content {
+  height: 100%;
+  @include centerXYFlex($jc: start, $ai: inherit, $fd: column, $bc: $b-input) ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  .container__menu-content-btnDown {
+    padding: 8px 13px;
+    margin-left: auto;
+    @include btn($bc: $color-third, $c: $c-input);
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 28px;
+    transition: 0.1s;
+    &:hover {
+      background-color: #626264;
+      transition: 0.1s;
+    }
+    h6 {
+      font-size: 13px;
+      color: $c-primary;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+  }
+  .container__menu-content-directSettings-sup {
     display: flex;
     flex-direction: column;
+    gap: 40px;
+    padding: 0 20px 25px;
+    .container__menu-content-directSettings-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .container__menu-content-directSettings-content-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        label {
+          font-weight: 600;
+          font-size: 16px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          margin-bottom: 2px;
+        }
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 26px;
+          height: 16px;
+        }
+
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: $color-third;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 8px;
+          width: 8px;
+          left: 4px;
+          bottom: 4px;
+          background-color: $c-primary;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+        input:checked + .slider {
+          background-color: $checkbox-checked;
+        }
+        input:checked + .slider:before {
+          transform: translateX(10px);
+        }
+        .slider {
+          border-radius: 13px;
+        }
+        .slider:before {
+          border-radius: 50%;
+        }
+      }
+      span {
+        font-size: 14px;
+      }
+      .container__menu-content-directSettings-content-select {
+        position: relative;
+        i {
+          position: absolute;
+          left: 98px;
+          top: 11.8px;
+          font-size: 10px;
+        }
+        select {
+          position: relative;
+          height: 31.6px;
+          width: 118px;
+          border: 1px solid $c-primary;
+          background-color: $b-input;
+          border-radius: 4px;
+          color: $c-primary;
+          display: block;
+          appearance: none;
+          padding-block: 7px;
+          padding-inline: 10px 13px;
+          margin-inline-start: 2px;
+          margin-bottom: 2px;
+          outline: none;
+          box-sizing: border-box;
+        }
+      }
+      .container__menu-content-directSettings-content-checkbox {
+        display: flex;
+        position: relative;
+        input {
+          position: absolute;
+          z-index: 9;
+          width: 16px;
+          height: 16px;
+          border: none;
+          outline: none;
+          background-color: $color-secondary;
+          border-radius: 4px;
+          appearance: none;
+          &:checked {
+            background-color: transparent;
+          }
+        }
+        i {
+          position: absolute;
+          left: 4px;
+          border-radius: 4px;
+          top: 3px;
+          width: 15px;
+          height: 15px;
+          background-color: $checkbox-checked;
+          z-index: 1;
+          font-size: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        span {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .line {
+    width: 100%;
+  }
+  .container__menu-content-ManageSettings {
+    padding: 25px 20px 0;
+    a {
+      text-decoration: none;
+      color: $c-primary;
+      font-size: 14px;
+      span {
+        padding-left: 5px;
+      }
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
