@@ -284,6 +284,10 @@
   transition: 0.1s;
 }
 
+.container__menu-hidden {
+  display: none;
+}
+
 .container__menu-content {
   height: 100%;
   display: flex;

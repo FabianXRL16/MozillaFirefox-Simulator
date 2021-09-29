@@ -1,4 +1,7 @@
 @import "../../mixins";
+.container__menu-hidden{
+  display: none;
+}
 .container__menu-content {
   height: 100%;
   @include centerXYFlex($jc: start, $ai: inherit, $fd: column, $bc: $b-input) ;

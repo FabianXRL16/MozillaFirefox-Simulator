@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <button id="button_menu" class="container__settings" onclick="upMenu()">
+  <button class="container__settings" onclick="toShowMenu()">
     <i class="fas fa-cog"></i>
   </button>
-  <div id="menu_up" class="container__menu-content">
-    <button class="container__menu-content-btnDown" id="menu_down" onclick="downMenu()">
+  <div id="downMenuContainer" class="container__menu-hidden">
+    <button class="container__menu-content-btnDown" onclick="hiddenMenu()">
       <h6>Close</h6>
     </button>
     <div class="container__menu-content-directSettings">
