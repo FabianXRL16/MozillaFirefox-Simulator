@@ -17,29 +17,49 @@
     <i class="fas fa-cog"></i>
   </button>
   <div id="menu_up" class="container__menu-content">
-    <button id="menu_down" onclick="downMenu()">Closed</button>
+    <button class="container__menu-content-btnDown" id="menu_down" onclick="downMenu()">
+      <h6>Close</h6>
+    </button>
     <div class="container__menu-content-directSettings">
-      <div>
-        <div class="container__menu-content-directSettings-directAccess">
-          <h3>Accesos directos</h3>
-        <span>Sitios que guarda o que visita</span>
-        <select name="" id="">
-          <option value="">1 fila</option>
-          <option value="">2 fila</option>
-          <option value="">3 fila</option>
-          <option value="">4 fila</option>
-        </select>
+      <div class="container__menu-content-directSettings-sup">
+        <div class="container__menu-content-directSettings-content">
+          <div class="container__menu-content-directSettings-content-title">
+            <label>Shortcuts</label>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <span>Sites you save or visit</span>
+          <div class="container__menu-content-directSettings-content-select">
+            <select name="" id="">
+              <option value="">1 row</option>
+              <option value="">2 rows</option>
+              <option value="">3 rows</option>
+              <option value="">4 rows</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="container__menu-content-directSettings-content-checkbox">
+            <input type="checkbox"><span>Sponsored shortcuts</span><i class="fas fa-check"></i>
+          </div>
         </div>
-        <div class="container__menu-content-directSettings-recentActivity">
-          <h3>Actividad reciente</h3>
-        <span>Una selección de sitios y contenidos recientes</span>
+        <div class="container__menu-content-directSettings-content">
+          <div class="container__menu-content-directSettings-content-title">
+            <label>Actividad reciente</label>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <span>A selection of recent sites and content</span>
         </div>
       </div>
-      <button>B</button>
     </div>
+    <hr class="line">
     <div class="container__menu-content-ManageSettings">
       <a href="">
-        <i class="fas fa-cog"></i> <span>Administrar mas ajustes</span>
+        <i class="fas fa-cog"></i><span>Manage more settings</span>
       </a>
     </div>
   </div>
