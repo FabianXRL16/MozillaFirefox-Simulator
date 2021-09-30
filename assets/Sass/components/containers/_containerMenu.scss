@@ -1,10 +1,33 @@
 @import "../../mixins";
-.container__menu-hidden{
+
+.animationAdd{
+  animation: toShow 1s;
+}
+@keyframes toShow{
+  0%{
+    transform: translateX(432px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.container__menu-hidden {
   display: none;
 }
 .container__menu-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 432.5px;
+  box-shadow: $bs-primary;
+  z-index: 10;
+  color: $c-primary;
+  box-sizing: border-box;
+  padding: 16px;
   height: 100%;
-  @include centerXYFlex($jc: start, $ai: inherit, $fd: column, $bc: $b-input) ;
+  @include centerXYFlex($jc: start, $ai: inherit, $fd: column, $bc: $b-input);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   .container__menu-content-btnDown {
     padding: 8px 13px;

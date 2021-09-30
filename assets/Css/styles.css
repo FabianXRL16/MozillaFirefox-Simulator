@@ -9,21 +9,6 @@
   font-size: 16px;
 }
 
-.container__menu-content {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  width: 432.5px;
-  background-color: #38383d;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 10;
-  color: #E0E0E6;
-  box-sizing: border-box;
-  padding: 16px;
-  display: none;
-}
-
 .container {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -284,11 +269,33 @@
   transition: 0.1s;
 }
 
+.animationAdd {
+  animation: toShow 1s;
+}
+
+@keyframes toShow {
+  0% {
+    transform: translateX(432px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 .container__menu-hidden {
   display: none;
 }
 
 .container__menu-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 432.5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 10;
+  color: #E0E0E6;
+  box-sizing: border-box;
+  padding: 16px;
   height: 100%;
   display: flex;
   justify-content: start;
